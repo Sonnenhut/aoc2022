@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/dayListFragment">
+
+    <fragment
+        android:id="@+id/dayListFragment"
+        android:name="com.aoc2022.overview.DayListFragment"
+        android:label="@string/overview"
+        tools:layout="@layout/fragment_day_list">
+        <action
+            android:id="@+id/action_dayListFragment_to_dayWithValuesFragment"
+            app:destination="@id/dayWithValuesFragment" />
+        <action
+            android:id="@+id/action_dayListFragment_to_day6Fragment"
+            app:destination="@id/day6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayWithValuesFragment"
+        android:name="com.aoc2022.day.DayWithValueFragment"
+        tools:layout="@layout/fragment_day_list">
+        <!-- TODO: check the label/title in navbar! https://stackoverflow.com/questions/52511136/how-to-set-title-in-app-bar-with-navigation-architecture-component -->
+        <argument
+            android:name="day"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/day6Fragment"
+        android:name="com.aoc2022.day.Day6Fragment"
+        tools:layout="@layout/fragment_day_list">
+        <!-- TODO: check the label/title in navbar! https://stackoverflow.com/questions/52511136/how-to-set-title-in-app-bar-with-navigation-architecture-component -->
+        <argument
+            android:name="day"
+            app:argType="integer" />
+    </fragment>
+</navigation>
