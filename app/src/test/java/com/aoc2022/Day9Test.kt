@@ -29,7 +29,7 @@ class Day9Test {
     @Test
     fun pt2_biggerExampleInput_isCorrect() {
         val tut = tutInstance()
-        assertEquals(36, tut.solve2(EXAMPLE_BIGGER_INPUt))
+        assertEquals(36, tut.solve2(EXAMPLE_BIGGER_INPUT))
     }
 
     @Test
@@ -60,7 +60,7 @@ D 1
 L 5
 R 2
         """.trimIndent().lines()
-        val EXAMPLE_BIGGER_INPUt = """
+        val EXAMPLE_BIGGER_INPUT = """
 R 5
 U 8
 L 8
