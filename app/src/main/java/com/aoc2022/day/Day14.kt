@@ -3,11 +3,6 @@ package com.aoc2022.day
 import kotlin.math.max
 import kotlin.math.min
 
-
-fun main() {
-    println("")
-}
-
 class Day14 : GenericDay() {
 
     override fun solve1(input: List<String>): Int {
