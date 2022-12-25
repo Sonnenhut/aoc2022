@@ -89,10 +89,6 @@ class Day22 : GenericDay() {
         return Face(wall, floor)
     }
 
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
     fun solve2Example(input: List<String>) : Int {
         val wraps = pt2exampleWraps(input)
         return solve2(input, wraps)

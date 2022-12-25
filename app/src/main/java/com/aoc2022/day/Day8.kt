@@ -69,9 +69,5 @@ class Day8 : GenericDay() {
         return coord.first in validRange && coord.second in validRange
     }
 
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
 }
 

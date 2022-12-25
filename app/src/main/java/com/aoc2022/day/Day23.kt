@@ -78,10 +78,6 @@ class Day23 : GenericDay() {
         return directionsWithDiagonal.map { it + this }
     }
 
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
     override fun solve2(input: List<String>): Int {
         return solve(input, -1).second
     }

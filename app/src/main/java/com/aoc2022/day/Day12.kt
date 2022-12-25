@@ -35,11 +35,6 @@ class Day12 : GenericDay() {
         return this[y][x]
     }
 
-
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
     fun Char.height(): Char {
         return when (this) {
             'S' -> 'a'

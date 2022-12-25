@@ -78,13 +78,6 @@ class Day15 : GenericDay() {
                 }
             }
 
-        operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-            return Pair(this.first + other.first, this.second + other.second)
-        }
-
-        operator fun Pair<Int, Int>.minus(other: Pair<Int, Int>): Pair<Int, Int> {
-            return Pair(this.first - other.first, this.second + other.second)
-        }
 
         private fun Pair<Int, Int>.manhattanDist(other: Pair<Int, Int>): Int {
             return abs(other.first - this.first) + abs(other.second - this.second)

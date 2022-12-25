@@ -63,10 +63,6 @@ class Day9 : GenericDay() {
         return other + dist
     }
 
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
     enum class Direction(private val x: Int, private val y: Int) {
         R(1, 0),
         L(-1, 0),

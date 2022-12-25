@@ -56,10 +56,6 @@ class Day14 : GenericDay() {
         return sand
     }
 
-    operator fun Pair<Int, Int>.plus(other: Pair<Int, Int>): Pair<Int, Int> {
-        return Pair(this.first + other.first, this.second + other.second)
-    }
-
     fun parseAllPoints(lines: List<String>): Set<Pair<Int, Int>> {
         return lines.map { parseToPoints(it) }
             .fold(setOf()) { acc, next ->
